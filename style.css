@@ -1,0 +1,200 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Gilroy';
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  position:relative;
+}
+.nav{
+  /*background-color: red;*/
+  height: 100px;
+  width: 100%;
+ /* border-bottom:2px solid #dadada;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 4vw;
+}
+.nav-2{
+  /*background-color: blue;*/
+  display: flex;
+  align-items: center;
+  gap:7vw
+}
+.nav h2{
+  font-size: 4vw;
+  font-weight: 700;
+}
+.nav h4{
+  font-size:2vw;
+}
+.nav i{
+  font-size: 3vw;
+  font-weight: 800;
+  display: none;
+}
+.sign{
+  font-size:2vw;
+  padding: 0.7vw 2vw;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight:700;
+}
+
+.content{
+  height: calc(100% - 100px);
+  width:100%;
+  /*background-color:#ea59;*/
+  display: flex;
+  position: relative;
+}
+.left{
+  height: 100%;
+  width: 55%;
+ /* background-color: crimson;*/
+  padding: 3vw 4vw;
+}
+.left h1{
+  font-size: 4.2vw;
+  line-height: 4.5vw;
+}
+.left h1 span{
+  color: #007BFF;
+}
+.left p {
+  font-size:1.5vw;
+  color:#666;
+  font-weight: 600;
+  width: 80%;
+  margin-top:1vw;
+  margin-bottom:3vw;
+}
+.button{
+  font-size:3vw;
+  padding: 1.3vw 2.3vw;
+  background-color:#007BFF;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 700;
+}
+.right{
+  height: 100%;
+  width: 45%;
+  /*background-color: royalblue;*/
+}
+.right img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width:600px){
+  .nav{
+   /* background-color: skyblue;
+    color: #fff;*/ 
+    padding:0 6vw;
+    height: 60px;
+  }
+  .nav h2{
+    font-size: 7vw;
+  }
+  .nav h4{
+    font-size: 4vw;
+    display: none;
+  }
+  .nav i {
+    display: block;
+    font-size: 6vw;
+    cursor: pointer;
+  }
+  /* --- NEW CSS FOR HAMBURGER MENU --- */
+
+  .nav-2 {
+    /* Initially hide the nav-2 content */
+     /* Or use transform/opacity for animations */
+    flex-direction: column; /* Stack items vertically when open */
+    position: fixed; /* Overlay on top of content */
+    top: 0;
+    right: 0;
+    width:50%; /* Adjust width as needed */
+    height: 100%;
+    background-color: #e6f0ff; /* Background for the mobile menu */
+    padding: 20vw 0; /* Add padding to push content down from top */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure it's above other content */
+    align-items: center; /* Center items horizontally */
+    gap: 5vw; /* Space between menu items */
+    justify-content: flex-start; /* Start items from the top */
+    transition: transform 0.3s ease-out; /* Smooth transition for opening/closing */
+    transform: translateX(100%); /* Initially push it off-screen to the right */
+  }
+
+  .nav-2.active {
+    display: flex; /* Show the nav-2 when active */
+    transform: translateX(0); /* Slide it into view */
+  }
+
+  /* Ensure h4 and button inside active nav-2 are visible */
+  .nav-2.active h4,
+  .nav-2.active .sign {
+    display: block; /* Make links and sign button visible when menu is active */
+    font-size: 5vw; /* Adjust font size for mobile menu links */
+    padding: 2vw 3vw; /* Add some padding around links */
+    text-align: center;
+    width: 50%;
+  }
+
+  .nav-2.active .sign {
+    margin-top: 2vw; /* Add some spacing above the sign in button */
+  }
+  .sign{
+  font-size: 4vw;
+  padding:1.67vw 3vw;
+  display:block;
+  }
+  .content{
+    height: calc(100% - 60px);
+    flex-direction: column;
+  }
+  .left{
+    width: 98%;
+    height: 50%;
+    /*background-color: red;*/ 
+    padding: 5vw 4vw;
+  }
+  .left h1 {
+    font-size: 9vw;
+    line-height:10vw;
+  }
+  .left p{
+    font-size:4vw;
+    margin-top:4vw;
+    margin-bottom:2.5vw;
+  }
+  .left button{
+    font-size: 3.5vw;
+    padding: 2.5vw 6vw;
+    font-weight: 600;
+    
+  }
+  .right{
+    width: 100%;
+    height: 50%;
+  }
+  .right img {
+    width:100%;
+    height:auto;
+  }
+}
