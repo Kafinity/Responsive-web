@@ -10,7 +10,7 @@ A simple and responsive website built using HTML, CSS, and JavaScript. Includes 
 - Built using HTML, CSS, and JavaScript
 
 ## 🚀 Live Preview
-[Add your live site link here - e.g. Vercel or GitHub Pages]
+[Click here to view the live site]([https://your-username.github.io/your-repo-name](https://kafinity.github.io/Responsive-web/))
 
 ## 💡 Learnings
 - Media queries
