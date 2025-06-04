@@ -11,7 +11,8 @@ A simple and responsive website built using HTML, CSS, and JavaScript. Includes 
 
 ## 🚀 Live Preview
 
-[Click here to view the live site](https://your-username.github.io/your-repo-name](https://kafinity.github.io/Responsive-web/)
+[Click here to view the live site](https://kafinity.github.io/Responsive-web/)
+
 
 ## 💡 Learnings
 - Media queries
