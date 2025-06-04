@@ -19,3 +19,9 @@ A simple and responsive website built using HTML, CSS, and JavaScript. Includes 
 - Flexbox/Grid
 - JavaScript for toggling menu
 - 
+
+---
+
+## 📌 Author
+
+Made with ❤️ by [Kaif](https://github.com/Kafinity)
